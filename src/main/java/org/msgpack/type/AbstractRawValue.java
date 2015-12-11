@@ -25,7 +25,7 @@ import java.nio.charset.CharsetDecoder;
 import java.nio.charset.CodingErrorAction;
 
 abstract class AbstractRawValue extends AbstractValue implements RawValue {
-    static final String UTF8 = "UTF-8";
+    static final String UTF8 = "ISO-8859-1";
 
     @Override
     public ValueType getType() {

@@ -71,7 +71,7 @@ public class JSONPacker extends AbstractPacker {
         this.out = out;
         this.stack = new PackerStack();
         this.flags = new int[PackerStack.MAX_STACK_SIZE];
-        this.decoder = Charset.forName("UTF-8").newDecoder()
+        this.decoder = Charset.forName("ISO-8859-1").newDecoder()
                 .onMalformedInput(CodingErrorAction.REPORT)
                 .onUnmappableCharacter(CodingErrorAction.REPORT);
     }

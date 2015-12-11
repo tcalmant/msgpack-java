@@ -229,7 +229,7 @@ public class MessagePackPacker extends AbstractPacker {
         byte[] b;
         try {
             // TODO encoding error?
-            b = s.getBytes("UTF-8");
+            b = s.getBytes("ISO-8859-1");
         } catch (UnsupportedEncodingException ex) {
             throw new MessageTypeException(ex);
         }

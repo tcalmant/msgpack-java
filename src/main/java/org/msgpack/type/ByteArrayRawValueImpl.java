@@ -37,7 +37,7 @@ class ByteArrayRawValueImpl extends AbstractRawValue {
     private static final ThreadLocal<CharsetDecoder> decoderStore = new ThreadLocal<CharsetDecoder>() {
         @Override
         protected CharsetDecoder initialValue() {
-            return Charset.forName("UTF-8").newDecoder()
+            return Charset.forName("ISO-8859-1").newDecoder()
                     .onMalformedInput(CodingErrorAction.REPORT)
                     .onUnmappableCharacter(CodingErrorAction.REPORT);
         }
